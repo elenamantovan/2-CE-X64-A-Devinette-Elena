@@ -9,10 +9,16 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Welcome to the Guessing Game!</h1>
-        <p>Think you can guess the secret number? Let's find out!</p>
-        <button onclick="startGame()">Start the Game</button>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="https://media.istockphoto.com/id/1921502719/fr/vid%C3%A9o/de-haut-en-bas-de-la-balle-roulant-sur-une-table-de-roulette-tournante-et-tombe-dans-la-poche.mp4?s=mp4-640x640-is&k=20&c=-ERm_k-orqbR82uW54WNG-Hau7Y8fBilrJP52kUzW4Y=" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Welcome to the Guessing Game!</h1>
+            <p>Can you guess the secret number? Click below to start.</p>
+            <button onclick="startGame()">Start the Game</button>
+        </div>
     </div>
     <script src="script.js"></script>         
 </body>
