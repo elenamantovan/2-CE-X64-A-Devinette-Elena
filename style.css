@@ -1,61 +1,50 @@
-/* Reset default margin and padding */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Video Container Styling */
-.video-container {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-/* Video Background Styling */
-#background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; /* Push the video behind content */
-    object-fit: cover;
-}
-
-/* Content Styling */
-.content {
-    position: relative;
-    z-index: 1; /* Ensure content is above video */
-    color: white;
-    text-align: center;
+/* Body Styling */
+body {
     font-family: 'Arial', sans-serif;
-    padding: 20px;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
 }
 
-/* Heading and Paragraph Styling */
+/* Center Content */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
 h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ff6f61;
 }
 
+/* Paragraph Styling */
 p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    color: #555;
 }
 
 /* Button Styling */
 button {
     font-size: 1rem;
     padding: 10px 20px;
+    margin-top: 20px;
     background-color: #ff6f61;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
